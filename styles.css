@@ -1,0 +1,139 @@
+@media (max-width: 768px) {
+  ul.navlinks {
+    flex-direction: column; /* vertical links */
+    gap: 0.5rem; /* smaller spacing on mobile */
+  }
+}
+
+.hello{
+  font-size: 5rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow:
+        0 0 15px red, 
+        0 0 20px #FF0000,
+        0 0 30px #FF0000,
+        0 0 0px #FF0000,
+        0 0 0px #FF0000;
+  margin-top: 15%;
+  color: rgb(240, 137, 159);
+  text-align: center;
+}
+
+body{
+  margin: 0;
+   position: relative;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+#home-page::before {
+  content: "";
+  background-image: url('fortnite.png');
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.2; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  filter: saturate(0%);
+}
+
+.logo h1{
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-left: 3.125rem;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: rgb(240, 137, 159);
+    text-transform: uppercase;
+    text-shadow:
+        0 0 15px red, 
+        0 0 20px #FF0000,
+        0 0 30px #FF0000,
+        0 0 0px #FF0000,
+        0 0 0px #FF0000;
+        
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between; /* spreads items */
+  align-items: center; /* vertical align */
+  flex-wrap: wrap; /* moves items to next line on small screens */
+  padding: 1rem; /* spacing */
+  gap: 1rem; /* space between links */
+  border-bottom: 0.5px solid gray;
+    margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.063rem 0.01em;
+  background: black;
+  color: white;
+}
+
+
+
+.nav-links{
+  font-family: "Bebas Neue", sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 9.375rem;
+  display: flex;
+  gap: 6rem; /* space between links */
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+}
+.hero{
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+.navlinks li a {
+  text-decoration: none;
+  font-size: 1rem; /* use rem */
+  padding: 0.5rem 1rem;
+}
+
+.SHOP{
+  box-shadow: 0 0 5px red, 0 0 25px red;
+  text-shadow: 1px 1px 3px black; 
+  font-weight: 400;
+  margin-left: 46%;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", sans-serif;
+  border:solid rgb(20, 4, 4) 0.01em; 
+    transition-duration: .4s;
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #D22B2B;
+  border-radius: 13px;
+  transition: transform 0.2s ease, background 0.2s;
+}
+.SHOP:hover {
+  transform: translateY(-3px); /* Slight lift effect */
+  
+
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red, 0 0 200px red;
+}
+
